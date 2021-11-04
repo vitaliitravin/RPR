@@ -1,28 +1,120 @@
+@font-face {
+    font-family: "Nunito sans";
+    src: url('../fonts/NunitoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Yeseva one";
+    src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset */
+
 body {
     margin: 0;
-    font-family: Nunito Sans, Arial, sans-serif;
+    font-family: Nunito Sans, Arial, sans-serif;s
     box-sizing: border-box;
 }
 
 .container {
     max-width: 1256px;
     margin: 0 auto;
+    
 }
+
+
 
 .button {
     background: #E3B873;
+    font-family: Nunito Sans, Arial, sans-serif;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     outline: 0;
     border: 0;
-    padding: 13px 33px;
+    padding: 13px 20px;
+    margin-left: 20px;
     color: white;
     text-transform: uppercase;
     font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    width: 207px;
+    height: 51px;
 }
+
+.input {
+    border: none;
+    padding: 8px 0 8px 0;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.label {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    position: relative;
+}
+
+.checkbox::after {
+    content: "I agree to the processing of personal data";
+    color:black;
+    display: inline-block;
+    width: 259px;
+    position: absolute;
+    left: 26px;
+    top: 3px;
+}
+
+
+
+.button-request {
+    width: 161px;
+    height: 37px;
+    padding: 1px 33px;
+    font-size: 10px;
+}
+
+.type-second {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+} 
 
 .logo {
     color: #E3B873;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
 }
 
 .header {
@@ -34,20 +126,43 @@ body {
     justify-content: space-between;
     height: 83px;
     align-items: center;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 .header-navigation {
     list-style: none;
     display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.header-navigation__item a:hover {
+    color: #E3B873;
+    
 }
 
 .header-navigation__item {
     margin-right: 47px;
 }
 
+.telefon {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
 .header-navigation__item a {
     text-decoration: none;
     color: white;
+    
 }
 
 .hero {
@@ -55,6 +170,23 @@ body {
     background-size: cover;
     height: 707px;
     padding-top: 194px;
+    position: relative;
+}
+
+.hero-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
 }
 
 .title {
@@ -67,3 +199,367 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.subtitle {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+}
+
+.color {
+    color: #E3B873;
+
+}
+
+.white-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+/* End of step 1
+Вопросы:
+ 1. Как выровнить номер телефона с меню?
+ 2. Кнопки Calculate и Submit кажутся не одинаковыми по размеру?
+ 3. Кнопка Request настроена иначе чем в фигме. В порядке ли?
+   */
+
+.projects { 
+    background-color: black; 
+    z-index: -1;
+}
+
+.main {
+    width: 1205px;
+    height: 524px; 
+}
+
+.aside {
+    width: 487px;
+}
+
+.projects-navigation {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   padding-top: 107px;  
+}
+
+.projects-navigation__item {
+   font-family: Yeseva One;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.3);
+   position: relative;
+   left: -143px;
+   padding-left: 60px;
+}
+
+.projects-navigation__item a {
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.3);  
+}
+
+.projects-navigation__item a:hover {
+    color:  #E3B873;
+    text-decoration: underline 2px solid currentColor;
+}
+
+.projects-aside {
+    display: flexbox;
+    flex-direction: column;
+    width: 487px;
+    
+}
+
+.subtitle {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.projects-aside__subtitle {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    text-align: left;
+}
+
+.projects-aside__paragraph {
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.projects-aside__city {
+    width: 476px;
+    height: 201px;
+}
+
+.projects-aside__city__paragraph {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.projects-aside__city__subtitle__table {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #E3B873;
+}
+
+.projects-aside__city__paragraph__table {
+    font-size: 13px;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;   
+}
+
+.projects-image {
+    width: 679px;
+    height: 482px;
+    position: relative;
+    left: 492px;
+    top: -485px;
+}
+
+.project-aside__slider {
+    padding-top: 86px;
+    width: 199px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* page 2
+   Как закрепить изображение без -top, а navigation без -left
+   Качество изображения
+   navigation - underline отличается от фигмы
+    */
+
+.control-title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.control-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.control-logo hr {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 5px;
+
+}
+
+.control-logo img{
+    width: 33px;
+    height: 28px;
+    margin-top: -4px;
+}
+
+.control-workman__image {
+    width: 817px;
+    height: 434px;
+    position: relative;
+    left: 220px;
+    padding-top: 31px;
+}
+
+.control-hr {
+    border-radius: 5px;
+    margin-top: 62.5px;
+}
+
+.control {
+    margin-top: -345px;
+    z-index: 1;
+}
+
+.control-paragraph {
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-top: 34px;
+}
+
+.control-form {
+    box-sizing: border-box;
+    width: 632px;
+    margin-left: 333px;
+    margin-bottom: 60px;
+    margin-top: 91px;
+}
+
+.control-form__input {
+    border:0; 
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.control-form__label {
+    display: inline-block;
+   
+}
+
+.control-form__checkbox {
+    left: 115px;
+    margin-top: 35px;
+}
+/* как расстянуть форму и поставить label над unputом?*/
+
+.repair-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-top: 75px;
+}
+
+.repair-logo img {
+    padding-left: 610px;
+    margin-top: 13px;
+    position: relative;
+}
+
+.repair-logo::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 50%;
+}
+
+.repair-logo::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 50%;
+}
+
+/* почему не сработали псевдоэлементы? */
+
+
+.repair-types img {
+    width: 392px;
+    height: 421px;
+    position: absolute;
+}
+
+.repair-types {
+    margin-top: -30px;
+}
+
+
+.title-list {
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    padding-top: 25px;
+    
+}
+
+.subtitle-list {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+   
+}
+
+.container-repair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 67px;
+}
+
+.redecorating-list {
+    position: relative;
+    margin-top: 294px;
+    width: 330px;
+    height: 286px;
+    left: 31px;
+    background: white;
+    z-index: 1;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+}
+
+.overhaul-list {
+    position: relative;
+    margin-top: 294px;
+    width: 330px;
+    height: 286px;
+    left: 31px;
+    background: white;
+    z-index: 1;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.designer-list {
+    position: relative;
+    margin-top: 294px;
+    width: 330px;
+    height: 286px;
+    left: 31px;
+    background: white;
+    z-index: 1;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.repair-types__price {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    width: 228px;
+    height: 54px;
+    text-align: center;
+    padding-top: 20px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+#price-fix {
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+    width: 228px;
+    height: 54px;
+    margin-left: 31px;
+
+}
+
+/* End of step 2 */

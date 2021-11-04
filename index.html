@@ -16,15 +16,15 @@
             <nav>
                 <ul class="header-navigation">
                 <li class="header-navigation__item"><a href="">Home</a></li>
-                <li class="header-navigation__item"><a href="">Projects</a>"></li>
+                <li class="header-navigation__item"><a href="">Projects</a></li>
                 <li class="header-navigation__item"><a href="">Measurement</a></li>
                 <li class="header-navigation__item"><a href="">Team</a></li>
                 <li class="header-navigation__item"><a href="">Reviews</a></li>
                 <li class="header-navigation__item"><a href="">Contacts</a></li>
                 </ul>
             </nav>
-            <span><a href="tel:+79827683239">+7(928)7683239</a></span>
-            <button class="button">Request a call</button>
+            <div><a href="tel:+79827683239" class="telefon">+7(928)7683239</a></div>
+            <button class="button button-request">Request a call</button>
         </div>
     </header>
     
@@ -32,141 +32,160 @@
     <section class="hero">
         <div class="container hero-container">
            <h1 class="title">
-               Turnkey Repair in the <br> city of <span>Rostov-on-Don</span>
+               Turnkey Repair in the <br> city of <span class="color">Rostov-on-Don</span>
             </h1>
-           <p>Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
+           <p class="white-text"> Get ready-made turnkey repairs on time <br>
+             work time saving up to 45 days and 20% from <br>
+              of materials due to the organization of work
            </p>
-           <button type="button">Caltulate the cost</button>
-           <button type="button">Submit your application</button>
+           <button type="button" class="button">Caltulate the cost</button>
+           <button type="button" class="button type-second">Submit your application</button>
         </div> 
+        <div class="hero-overlay"></div>
     </section>
-    <section>
-        <div class="project">
-            <ul>
-                <li><a href="">Rostov-on-Don, Admiral</a></li>
-                <li><a href="">Sochi Thieves</a></li>
-                <li><a href="">Rostov-on-Don Patriotic</a></li>  
+    <!-- end of step 1-->
+    <section class="projects">
+        <div class="container">
+
+            <ul class="projects-navigation">
+                <li class="projects-navigation__item"><a href="">Rostov-on-Don, Admiral</a></li>
+                <li class="projects-navigation__item"><a href="">Sochi Thieves</a></li>
+                <li class="projects-navigation__item"><a href="">Rostov-on-Don Patriotic</a></li>  
             </ul>
-        <div class="">
-            <div class="">
-                <h2>Completed <br> Projects</h2>
-                <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+        <div class="projects-main">
+            <div class="projects-aside">
+                <h2 class="projects-aside__subtitle">Completed <br> Projects</h2>
+                <p class="projects-aside__paragraph">Only a small part of the work performed by our company is presented <br>
+                    on the site. For 14 years on in the construction <br>
                     market we have made happy more than 1000 families</p>
-                <div class="">
-                    <h3>City:</h3>
-                    <p>Rostov-on-Don
-                        LCD admiral</p>
-                    <h3>Repair time:</h3>
-                    <p>3.5 months</p>
-                    <h3>apartment area:</h3>
-                    <p>81 m<sup>2</sup></p>
-                    <h3>Repair Cost:</h3>
-                    <p>Upon request</p>
-                    <img src="images/image 2.1.png" alt="completed project">
-                </div>
-           </div>
+                <table class="projects-aside__city">
+                    <tr>
+                        <th class="projects-aside__city__subtitle__table">City:</th>
+                        <th class="projects-aside__city__subtitle__table">apartment area:</th>
+                    </tr>
+                    <tr>
+                        <th class="projects-aside__city__paragraph__table">Rostov-on-Don <br>
+                            LCD admiral</th>
+                        <th class="projects-aside__city__paragraph__table">81 m<sup>2</sup></th>
+                    </tr>
+                    <tr>
+                        <th class="projects-aside__city__subtitle__table">repair time:</th>
+                        <th class="projects-aside__city__subtitle__table">repair cost:</th>
+                    </tr>
+                    <tr>
+                        <th class="projects-aside__city__paragraph__table">3.5 months</th>
+                        <th class="projects-aside__city__paragraph__table">Upon request</th>
+                    </tr>
+                </table>  
+            <div class="project-aside__slider">
+                <img src="images/slider_arrowLeft.svg" class="project-aside__slider__item" alt="">
+                <img src="images/slider_whiteDot.svg" class="project-aside__slider__item" alt="">
+                <img src="images/slider_dot.svg" class="project-aside__slider__item" alt="">
+                <img src="images/slider_dot.svg" class="project-aside__slider__item" alt="">
+                <img src="images/Slider_arrowRight.svg" class="project-aside__slider__item" alt="">
+            </div>     
+            </div>
+                <img src="images/image 2.1.jpg"  class="projects-image" alt="completed project">
+               
         </div>
-        </div>
+       </div>
     </section>
-    <section>
-        <div class="">
-            <h3>online control</h3>
-        <div class ="">
-        <img src="images/camera.svg.svg" width="200" height="200" alt="security camera logo">
+
+    <section class="control">
+        <div class="container">
+            <h3 class="control-title">online control</h3>
+        <div class ="control-logo">
+            <hr width="32px" size="2" color="#E3B873">
+            <img src="images/camera.svg.svg" width="200" height="200" alt="security camera logo">
+            <hr width="32px" size="2" color="#E3B873">
         </div>
-        <img src="images/workman.png" alt="">
+        <img src="images/workman.png"  class="control-workman__image" alt="">
 
-        <hr>
+        <hr class="control-hr" width="55px" size="2" color="#E3B873">
 
-        <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+        <p class="control-paragraph">At each facility, a camera is installed that broadcasts the progress of work on the <br>
+            clock. At any time, you can go to our website and monitor the progress of work in<br>
+             your apartment. You can watch the live broadcast from one of our facilities!<br>
             Leave a request below and you will receive a link to the broadcast.</p>
-        <form class="form">
-            <p>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="What is your name:">
-            </p>
-            <p>
-            <label for="phone">Phone</label>
-            <input id="phone" type="number" placeholder="Your phone number">
-            </p>
-            <p>
-            <input type="Submit" value="Submit">
-            </p>
-            <p>
-            <input type="checkbox"> I agree to the processing of personal data
-            </p>
+        <form class="control-form">
+            
+            <label class="label control-form__label" for="name">Name</label>
+            <input class="input control-form__input" id="name" type="text" placeholder="What is your name:">
+
+            <label class="label control-form__label" for="phone">Phone</label>
+            <input class="input control-form__input" id="phone" type="number" placeholder="Your phone number">
+            
+            <button class="button control-form__button">Submit</button>
+            
+            <input class="checkbox control-form__checkbox" type="checkbox"> 
+            
         </form>    
         </div>
     </section> 
     
-    <section class="types">
+    <section class="repair">
         <div class="container">
-            <h3 class="">TYPES OF REPAIR</h3>
-            <div class="">
-                ::before
-                <img src="images/Vector.svg" width="" height="" alt="">
-                ::after
+            <h3 class="subtitle repair-subtitle">TYPES OF REPAIR</h3>
+            <div class="repair-logo">
+                <img src="images/Vector.svg" width="28" height="28" alt="">
             </div>
-            <div class="">
+            <div class="container-repair">
+            <div class="repair-types">
                 <img src="images/types1.jpg">
-                <div class="">
-                    <h4>Redecorating</h4>
-                    <ul>
-                        <li>Dismantling of old coatings</li>
-                        <li>Wallpapering</li>
-                        <li>Dismantling of old coatings</li>
-                        <li>Painting walls and ceilings</li>
-                        <li>Dismantling of old coatings</li>
-                        <li>Laying flooring</li>
-                        <li>Replacing plumbing</li>
-                        <li>Replacing sockets and switches</li>
-                        <li>Replacing doors</li>
+                <div class="repair-types redecorating-list">
+                    <h4 class="title-list">Redecorating</h4>
+                    <ul class="subtitle-list">
+                        <li>• Dismantling of old coatings</li>
+                        <li>• Wallpapering</li>
+                        <li>• Painting walls and ceilings</li>
+                        <li>• Laying flooring</li>
+                        <li>• Replacing plumbing</li>
+                        <li>• Replacing sockets and switches</li>
+                        <li>• Replacing doors</li>
                     </ul>
-                </div>
-                <div class="">
+        
+                <div class="repair-types__price">
                     from 900 rub / m2
                 </div>
             </div>
-            <div class="">
-                <img src="images/types2.jpg"
-                <div class="">
-                    <h4>Overhaul</h4>
-                    <ul>
-                        <li>Dismantling of old coatings</li>
-                        <li>Wallpapering</li>
-                        <li>Dismantling of old coatings</li>
-                        <li>Painting walls and ceilings</li>
-                        <li>Dismantling of old coatings</li>
-                        <li>Laying flooring</li>
-                        <li>Replacing plumbing</li>
-                        <li>Replacing sockets and switches</li>
-                        <li>Replacing doors</li>
+            </div>
+            <div class="repair-types">
+                <img src="images/types2.jpg">
+                <div class="repair-types overhaul-list">
+                    <h4 class="title-list" >Overhaul</h4>
+                    <ul class="subtitle-list">
+                        <li>• Dismantling of old coatings</li>
+                        <li>• Wallpapering</li>
+                        <li>• Painting walls and ceilings</li>
+                        <li>• Laying flooring</li>
+                        <li>• Replacing plumbing</li>
+                        <li>• Replacing sockets and switches</li>
+                        <li>• Replacing doors</li>
                     </ul>   
                 </div>
-                <div class="">
+                <div class="repair-types__price" id="price-fix">
                     from 1800 rub / m2
                 </div>
             </div>
-            <div class="">
+            <div class="repair-types">
                 <img src="images/types3.jpg">
-                <div class="">
-                    <h4>Designer Repair</h4>
-                    <ul>
-                        <li>Dismantling of old coatings</li>
-                        <li>Wallpapering</li>
-                        <li>Dismantling of old coatings</li>
-                        <li>Painting walls and ceilings</li>
-                        <li>Dismantling of old coatings</li>
-                        <li>Laying flooring</li>
-                        <li>Replacing plumbing</li>
-                        <li>Replacing sockets and switches</li>
-                        <li>Replacing doors</li>
+                <div class="repair-types designer-list">
+                    <h4 class="title-list">Designer Repair</h4>
+                    <ul class="subtitle-list">
+                        <li>• Dismantling of old coatings</li>
+                        <li>• Wallpapering</li>
+                        <li>• Painting walls and ceilings</li>
+                        <li>• Laying flooring</li>
+                        <li>• Replacing plumbing</li>
+                        <li>• Replacing sockets and switches</li>
+                        <li>• Replacing doors</li>
                     </ul> 
-                    <div class="">
+                    <div class="repair-types__price">
                         from 4000 rub / m2
                     </div>
                 </div>
             </div>
+        </div>
             <div class="request">
                 <img src="images/request.png" class="">
             <form>
