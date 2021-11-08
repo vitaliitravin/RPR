@@ -58,6 +58,7 @@ body {
     text-align: center;
     width: 207px;
     height: 51px;
+    cursor: pointer;
 }
 
 .input {
@@ -65,6 +66,7 @@ body {
     padding: 8px 0 8px 0;
     background-color: transparent;
     outline: transparent;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
 }
 
 .label {
@@ -80,6 +82,7 @@ body {
     height: 18px;
     border-radius: 1px;
     position: relative;
+    background-color: #E3B873;
 }
 
 .checkbox::after {
@@ -98,7 +101,13 @@ body {
     width: 161px;
     height: 37px;
     padding: 1px 33px;
-    font-size: 10px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
 .type-second {
@@ -158,6 +167,7 @@ body {
     text-decoration-line: underline;
     color: #E3B873;
 }
+
 
 .header-navigation__item a {
     text-decoration: none;
@@ -222,14 +232,15 @@ body {
 
 /* End of step 1
 Вопросы:
- 1. Как выровнить номер телефона с меню?
- 2. Кнопки Calculate и Submit кажутся не одинаковыми по размеру?
- 3. Кнопка Request настроена иначе чем в фигме. В порядке ли?
+ Кнопки Calculate и Submit кажутся не одинаковыми по размеру?
+ 
    */
 
 .projects { 
     background-color: black; 
     z-index: -1;
+    margin-top: -16px;
+    
 }
 
 .main {
@@ -276,12 +287,6 @@ body {
     flex-direction: column;
     width: 487px;
     
-}
-
-.subtitle {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
 }
 
 .projects-aside__subtitle {
@@ -405,16 +410,12 @@ body {
 }
 
 .control-form {
-    box-sizing: border-box;
-    width: 632px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 769px;
     margin-left: 333px;
     margin-bottom: 60px;
     margin-top: 91px;
-}
-
-.control-form__input {
-    border:0; 
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
 .control-form__label {
@@ -449,7 +450,7 @@ body {
     width: 32px;
     height: 1.54px;
     background-color: #E3B873;
-    top: 50%;
+    /* top: 50%; */
 }
 
 .repair-logo::after {
@@ -458,8 +459,8 @@ body {
     width: 32px;
     height: 1.54px;
     background-color: #E3B873;
-    top: 50%;
-}
+    /* /* top: 50%; */
+} 
 
 /* почему не сработали псевдоэлементы? */
 
@@ -559,7 +560,257 @@ body {
     width: 228px;
     height: 54px;
     margin-left: 31px;
+    margin-top: -20px;
 
 }
 
 /* End of step 2 */
+
+
+.request {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1256px;
+    height: 572px;
+    margin-top: 240px;
+}
+
+.request-list {
+    width: 527px;
+    height: 555px;
+    background-image: url(../images/requestBackground.png);
+    background-size: cover;  
+
+}
+
+/* как сдвинуть backgroung image? */
+
+.metering,
+.consulation, .estimate {
+    margin-top: 104px;
+}
+
+
+
+.request-list__list li {
+    position: relative;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+
+}
+
+.specialist::before {
+    content: "01";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -12px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.metering::before {
+    content: "02";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -12px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.consulation::before  {
+    content: "03";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -12px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.estimate::before  {
+    content: "04";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -12px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.request-form {
+    width: 506px;
+    height: 509px;
+    /* background: #131313;
+    z-index: -1; */
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+   
+}
+
+.request-subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF; 
+    margin-top: 28px; 
+}
+
+.request-form__label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.request-form__input {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 408px;
+    margin-top: 48px;
+
+}
+.request-form__button {
+    margin-left: 244px;
+}
+
+.request-logo {
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    position: relative;
+    padding-left: 800px;
+    margin-top: -26px;
+}
+
+.request-logo::before {
+    content: url(../images/request.svg);
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-color: #E3B873;
+    border-radius: 45px;
+    z-index: 1;
+    top: -9px;
+    right: 470px;
+}
+
+/* Как насторить content изображение в псевдоклассе? */
+
+.realize {
+    background-image: url(../images/realizeBackground.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 254px;
+}
+
+.realize-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.realize-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.realize-list {
+    width: 750px;
+}
+
+.realize-list__title {
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 137px;
+    margin-left: 51px;
+
+}
+
+.realize-list__list {
+    margin-top: 42px;
+}
+
+.realize-list__list li {
+    font-size: 20px;
+    line-height: 38px;
+    color: white;
+    padding-bottom: 11px;
+    padding-left: 10px;
+}
+
+.realize-list__list li:hover {
+    color:  #E3B873;
+    text-decoration: underline 2px solid currentColor;
+    cursor: pointer;
+}
+
+.realize-images-block1 {
+    margin-top: -41px;
+}
+
+.realize-images-block1__image2 {
+    margin-top: 39px;
+}
+
+.realize-images-block2 {
+    margin-top: -112px;
+}
+
+.realize-images-block2__image4 {
+    margin-top: 37px;
+    padding-bottom: 40px;
+}
+/* Как настроить margin bottom у блоков с изображениями? */
+
