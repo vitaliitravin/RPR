@@ -31,7 +31,7 @@
     <main>
     <section class="hero">
         <div class="container hero-container">
-           <h1 class="title">
+           <h1 class="title hero-title">
                Turnkey Repair in the <br> city of <span class="color">Rostov-on-Don</span>
             </h1>
            <p class="white-text"> Get ready-made turnkey repairs on time <br>
@@ -39,7 +39,7 @@
               of materials due to the organization of work
            </p>
            <button type="button" class="button">Caltulate the cost</button>
-           <button type="button" class="button type-second">Submit your application</button>
+           <button type="button" class="button">Submit your application</button>
         </div> 
         <div class="hero-overlay"></div>
     </section>
@@ -54,27 +54,27 @@
             </ul>
         <div class="projects-main">
             <div class="projects-aside">
-                <h2 class="projects-aside__subtitle">Completed <br> Projects</h2>
-                <p class="projects-aside__paragraph">Only a small part of the work performed by our company is presented <br>
+                <h2 class="title projects-aside__subtitle">Completed <br> Projects</h2>
+                <p class="subtitle projects-aside__paragraph">Only a small part of the work performed by our company is presented <br>
                     on the site. For 14 years on in the construction <br>
                     market we have made happy more than 1000 families</p>
                 <table class="projects-aside__city">
                     <tr>
-                        <th class="projects-aside__city__subtitle__table">City:</th>
-                        <th class="projects-aside__city__subtitle__table">apartment area:</th>
+                        <th class="title projects-aside__city__subtitle__table">City:</th>
+                        <th class="title projects-aside__city__subtitle__table">apartment area:</th>
                     </tr>
                     <tr>
-                        <th class="projects-aside__city__paragraph__table">Rostov-on-Don <br>
+                        <th class="subtitle projects-aside__city__paragraph__table">Rostov-on-Don <br>
                             LCD admiral</th>
-                        <th class="projects-aside__city__paragraph__table">81 m<sup>2</sup></th>
+                        <th class="subtitle projects-aside__city__paragraph__table">81 m<sup>2</sup></th>
                     </tr>
                     <tr>
-                        <th class="projects-aside__city__subtitle__table">repair time:</th>
-                        <th class="projects-aside__city__subtitle__table">repair cost:</th>
+                        <th class="title projects-aside__city__subtitle__table">repair time:</th>
+                        <th class="title projects-aside__city__subtitle__table">repair cost:</th>
                     </tr>
                     <tr>
-                        <th class="projects-aside__city__paragraph__table">3.5 months</th>
-                        <th class="projects-aside__city__paragraph__table">Upon request</th>
+                        <th class="subtitle projects-aside__city__paragraph__table">3.5 months</th>
+                        <th class="subtitle projects-aside__city__paragraph__table">Upon request</th>
                     </tr>
                 </table>  
             <div class="project-aside__slider">
@@ -108,26 +108,28 @@
              your apartment. You can watch the live broadcast from one of our facilities!<br>
             Leave a request below and you will receive a link to the broadcast.</p>
         <form class="form control-form">
-            
-            <label class="label control-form__label" for="name">Name</label>
-            <input class="input control-form__input" id="name" type="text" placeholder="What is your name:">
-
-            <label class="label control-form__label" for="phone">Phone</label>
-            <input class="input control-form__input" id="phone" type="number" placeholder="Your phone number">
+           
+            <label class="label">Name<input class="subtitle input" type="text"
+                placeholder="What is your name:"></label>
+            <label class="label">Phone<input class="subtitle input" type="tel"
+                placeholder="Your phone number:"></label>
             
             <button class="button control-form__button">Submit</button>
             
-            <input class="checkbox control-form__checkbox" type="checkbox"> 
             
-        </form>    
+        </form> 
+        <input class="checkbox control-form__checkbox" type="checkbox">   
         </div>
     </section> 
     
     <section class="repair">
         <div class="container">
-            <h3 class="subtitle repair-subtitle">TYPES OF REPAIR</h3>
+
+            <h3 class="title repair-title">TYPES OF REPAIR</h3>
             <div class="repair-logo">
-                <img src="images/Vector.svg" width="28" height="28" alt="">
+              
+                <img class="repair-logo__img" src="images/repair-logo.svg" width="28" height="28" alt="">
+             
             </div>
             <div class="container-repair">
             <div class="repair-types">
@@ -200,26 +202,18 @@
                 </div>
 
             <form class="form request-form">
-                <h3 class="subtitle request-subtitle">Leave a request for free<br>
-                    departure of the measurer</h3>
-                <p>
-                   <label class="label request-form__label" for="name">Name</label>
-                   <input class="input request-form__input" id="name" type="text" placeholder="What is your name:">
-                </p>
-                <p>
-                   <label class="label request-form__label" for="phone">Phone</label>
-                   <input class="input request-form__input" id="phone" type="number" placeholder="Your phone number">
-                </p>
-                <p>
-                   <label class="label request-form__label" for="mail">Email</label>
-                   <input class="input request-form__input" id="mail" input type="email" placeholder="Your email">
-                </p>
-                <p>
+
+                <h3 class="subtitle request-form__subtitle">Leave a request for free <br> departure of the measurer</h3>
+                    
+                    <label class="label">Name <input class="subtitle input" type="text"
+                            placeholder="What is your name:"></label>
+                    <label class="label">Phone <input class="subtitle input" type="text"
+                            placeholder="Your phone number:"></label>
+                    <label class="label">Email <input class="subtitle input" type="text"
+                            placeholder="Your email"></label>
                     <input class="checkbox" type="checkbox">
-                </p>
-                
-                <button class="button request-form__button">CALL THE MEASURER</button>
-        
+                   
+                    <button class="button request-form__button">Call the measurer</button>
             </form>
             </div>
             <div class="request-logo">
@@ -254,11 +248,11 @@
         
         <div class="realize-images-block1">
             <img src="images/realize1.png" width="354px" height="557.88px" alt="American classic furniture">
-            <img class="realize-images-block1 realize-images-block1__image2" src="images/realize2.png" width="354px" height="349.37px" alt="American classic design">
+            <img src="images/realize2.png" width="354px" height="349.37px" alt="American classic design">
         </div>
         <div class="realize-images-block2">
             <img src="images/realize3.png" width="354px" height="275px" alt="American clssic design">
-            <img class="realize-images-block2 realize-images-block2__image4" src="images/realize4.png" width="354px" height="624.88px" alt="American classic furniture">
+            <img src="images/realize4.png" width="354px" height="624.88px" alt="American classic furniture">
         </div>
         </div>
             
@@ -268,116 +262,141 @@
  
     <section class="clients">
         <div class="container clients-container">
-        <h3 class="title clients-title">OUR CLIENTS</h3>
-    
-        <img src="images/clientsLogo.png" width="33.72px" height="20.86px" alt="">
         
+            <h3 class="title clients-title">OUR CLIENTS</h3>
+        
+        <div class="clients-logo">
+        <hr id="clients-logo__left" width="32" size="4" color="#E3B873">
+        <img src="images/clients-logo.svg" width="33" height="28" alt="">
+        <hr id="client-logo__right" width="32" size="4" color="#E3B873">
         </div>
+        
         <div class="subtitle clients-subtitle">
             <p>80% of our customers recommend us to their <br>
                 friends and family.</p>
         </div>
 
-        <div class="clients-trio">
+        <div class="clients-content">
             
-            <div class="clients-trio__Maria">
-                <h4>Fedosova Maria <br>
+            <div class="clients-content__first__client">
+            
+                <h4 class="title client-title">Fedosova Maria <br>
                     Konstantinovna</h4>
-                <p class="clients-trio__Maria clients-trio__Maria__paragraph1">
-                    I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
-                    to Georgia for its professionalism and approach.
-                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                
+                <p class="subtitle subtitle-client">
+                    I want to thank the guys for their work. We put your <br> shower part in repair. I am very grateful that I referred <br>
+                    to the repair as to my own. Great thanks I express the <br> project 
+                    to Georgia for its professionalism and approach.<br>
+                    The repair process was turned out in terms, faster than <br> anticipated. Team mobile and professional. Works <br>
+                    performed qualitatively without comments. Quality <br> satisfied. Prices democratic. I recommend these <br> 
+                    masters.
                 </p>
+               
+            
+                <div class="clients-content__first__client__result">
+                    <span class="title meter">40 M2</span>
+                    <span class="title days">48 DAYS</span>
+                </div>
             </div>
-                <div class="clients-trio__Maria__waiting">
-                    <p class="clients-trio__Maria__waiting__metr">40 M2</p>
-                    <p class="clients-trio__Maria__waiting__days">48 DAYS</p>
-                </div>
+            
 
-
-                <div class="clients-trio__Sergey">
-                    <h4>Afanasyev Sergey <br> Alexandrovich</h4>
-                    <p class="clients-trio__Sergey clients-trio__Sergey__paragraph1">
-                        I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
-                        to Georgia for its professionalism and approach.
-                        The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                <div class="clients-content__second__client">
+                 
+                    <h4 class="title client-title">Afanasyev Sergey <br> Alexandrovich</h4>
+            
+                    <p class="subtitle subtitle-client">I want to thank the guys for their work. We put your <br> shower part in repair. I am very grateful that I referred <br>
+                    to the repair as to my own. Great thanks I express the <br> project 
+                    to Georgia for its professionalism and approach.<br>
+                    The repair process was turned out in terms, faster than <br> anticipated. Team mobile and professional. Works <br>
+                    performed qualitatively without comments. Quality <br> satisfied. Prices democratic. I recommend these <br> 
+                    masters.
                     </p>
-                </div>
-                    <div class="clients-trio__Sergey__waiting">
-                        <p class="clients-trio__Sergey__waiting__metr">98 M2</p>
-                        <p class="clients-trio__Sergey__waiting__days">128 DAYS</p>
+                
+
+                    <div class="clients-content__second__client__result">
+                        <span class="title meter">98 M2</span>
+                        <span class="title days">128 DAYS</span>
+                    </div>
                     </div>
 
-                    <div class="clients-trio__Egor">
-                        <h4>Kiriev Egor <br> Leonidovich</h4>
-                        <p class="clients-trio__Egor clients-trio__Egor__paragraph1">
-                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
-                            to Georgia for its professionalism and approach.
-                            The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                    <div class="clients-content__third__client">
+                        
+                        <h4 class="title client-title">Kiriev Egor <br> Leonidovich</h4>
+                    
+                        <p class="subtitle subtitle-client">I want to thank the guys for their work. We put your <br> shower part in repair. I am very grateful that I referred <br>
+                            to the repair as to my own. Great thanks I express the <br> project 
+                            to Georgia for its professionalism and approach.<br>
+                        
+                            The repair process was turned out in terms, faster than <br> anticipated. Team mobile and professional. Works <br>
+                            performed qualitatively without comments. Quality <br> satisfied. Prices democratic. I recommend these <br> 
+                            masters.
                         </p>
+                    
+                
+                     <div class="clients-content__third__client__result">
+                            <span class="title meter">98 M2</span>
+                            <span class="title days">128 DAYS</span>
+                    </div>
+                    </div>
                     </div>
 
-                     <div class="clients-trio__Egor__waiting">
-                            <p class="clients-trio__Egor__waiting__metr">98 M2</p>
-                            <p class="clients-trio__Egor__waiting__days">128 DAYS</p>
-                    </div>
-
-                    <div class="container clients-container__background"></div>
+                    
         </div>
-    </section>
+       </div>
+       
+       <div class="container clients-container__background"></div>
     
-    <div class="form question-form">
-        <h3 class="subtitle question-subtitle">Have any question?</h3>
-        <p>
-           <label class="label question-form__label" for="Name">Name</label>
-           <input class="input question-form__input" id="name" type="text" placeholder="What is your name:">
-        </p>
-        <p>
-           <label class="label question-form__label" for="Phone">Phone</label>
-           <input class="input question-form__input" id="phone" type="number" placeholder="Your phone number:">
-        </p>
-        <p>
-           <label class="label question-form__label" for="Question">Question</label>
-           <input class="input question-form__input" id="question" input type="text" placeholder="I want to know:">
-        </p>
-        <p>
-            <input class="checkbox" type="checkbox">
-        </p>
+    </section>
+
+
+    <!-- <form class="form question-form">
         
-        <button class="button question-form__button">SUBMIT</button>
-    </div>
+        <h3 class="title">have any questions?</h3>
+        
+     <div class="question-form question-form__content">
+        <label class="label name-label">Name <input class="subtitle input" type="text"
+            placeholder="What is your name:"></label>
+        <label class="label phone-label">Phone <input class="subtitle input" type="text"
+            placeholder="Your phone number:"></label>
+        <label class="label question-label">Question <input class="subtitle input" type="text"
+            placeholder="I want to know:"></label>
+     </div>
+     <input class="checkbox question-form__content__checkbox" type="checkbox">
+     <button class="button question-form__content__button">submit</button>
+    </form> -->
 
     <section class="location">
         <div class="container location-container">
-            <p class="subtitle location-subtitle">
+            <p class="title location-subtitle">
                 Rostov-on-Don, Nansen St., 239 Shopping Center <br>
                 Decorum Tel +7 (928) 768 32 29 
             </p>
-        </div>
+        
         
         <div class="location-icons">
-            <img src="images/clientsLogo.png" width="71" height="28">
+            <img src="images/location-icons.svg" width="71" height="28">
         </div>
 
         <div class="location-map">
             <img src="images/location-map.png" width="925" height="465">
         </div>
-
+       </div>
+    <div class="location-overlay"></div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container footer-content">
             <div class="logo">
             IC "Repair Design Project"
             </div>
             <nav>
-                <ul class="header-navigation">
-                <li class="header-navigation__item"><a href="">Home</a></li>
-                <li class="header-navigation__item"><a href="">Projects</a></li>
-                <li class="header-navigation__item"><a href="">Measurement</a></li>
-                <li class="header-navigation__item"><a href="">Team</a></li>
-                <li class="header-navigation__item"><a href="">Reviews</a></li>
-                <li class="header-navigation__item"><a href="">Contacts</a></li>
+                <ul class="footer-navigation">
+                <li class="footer-navigation__item"><a href="">Home</a></li>
+                <li class="footer-navigation__item"><a href="">Projects</a></li>
+                <li class="footer-navigation__item"><a href="">Measurement</a></li>
+                <li class="footer-navigation__item"><a href="">Team</a></li>
+                <li class="footer-navigation__item"><a href="">Reviews</a></li>
+                <li class="footer-navigation__item"><a href="">Contacts</a></li>
                 </ul>
             </nav>
             <div><a href="tel:+79827683239" class="telefon">+7(928)7683239</a></div>

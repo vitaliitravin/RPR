@@ -39,7 +39,23 @@ body {
     
 }
 
+.title {
+    margin: 0;
+    font-family: Yeseva One, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 40px;
+    line-height: 53px; */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
+.subtitle {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+}
 
 .button {
     background: #E3B873;
@@ -49,7 +65,6 @@ body {
     outline: 0;
     border: 0;
     padding: 13px 20px;
-    margin-left: 20px;
     color: white;
     text-transform: uppercase;
     font-style: italic;
@@ -109,13 +124,6 @@ body {
     text-transform: uppercase;
 
 }
-
-.type-second {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-} 
 
 .logo {
     color: #E3B873;
@@ -199,26 +207,22 @@ body {
     z-index: 1;
 }
 
-.title {
-    margin: 0;
-    font-family: Yeseva One, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: normal;
+.color {
+    color: #E3B873;
+
+}
+
+.hero-container .button:hover {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #ffffff00;
+}
+
+.hero-title {
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.subtitle {
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0;
-}
-
-.color {
-    color: #E3B873;
 
 }
 
@@ -230,11 +234,7 @@ body {
     color: #FFFFFF;
 }
 
-/* End of step 1
-Вопросы:
- Кнопки Calculate и Submit кажутся не одинаковыми по размеру?
- 
-   */
+/* End of step 1 */
 
 .projects { 
     background-color: black; 
@@ -303,6 +303,7 @@ body {
     line-height: 27px;
     color: #FFFFFF;
     text-align: left;
+    margin: 34px 0 42px 0;
 }
 
 .projects-aside__city {
@@ -329,7 +330,8 @@ body {
     font-size: 13px;
     line-height: 21px;
     text-align: left;
-    color: #FFFFFF;   
+    color: #FFFFFF;  
+    padding: 0 auto; 
 }
 
 .projects-image {
@@ -347,11 +349,7 @@ body {
     justify-content: space-between;
 }
 
-/* page 2
-   Как закрепить изображение без -top, а navigation без -left
-   Качество изображения
-   navigation - underline отличается от фигмы
-    */
+
 
 .control-title {
     font-family: Yeseva One;
@@ -411,25 +409,33 @@ body {
 
 .control-form {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
     width: 769px;
-    margin-left: 333px;
-    margin-bottom: 60px;
+    margin-left: 270px;
     margin-top: 91px;
 }
 
-.control-form__label {
-    display: inline-block;
-   
+.control-form .label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 39px;
+}
+
+.control-form .input {
+    width: 231px;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
 .control-form__checkbox {
-    left: 115px;
-    margin-top: 35px;
+    left: 518px;
+    margin-bottom: 147.85px;
 }
-/* как расстянуть форму и поставить label над unputом?*/
 
-.repair-subtitle {
+.repair-title {
     font-size: 20px;
     line-height: 28px;
     text-align: center;
@@ -441,6 +447,9 @@ body {
 .repair-logo img {
     padding-left: 610px;
     margin-top: 13px;
+}
+
+.repair-logo {
     position: relative;
 }
 
@@ -450,8 +459,10 @@ body {
     width: 32px;
     height: 1.54px;
     background-color: #E3B873;
-    /* top: 50%; */
+    top: 50%;
+    left: 570px;
 }
+
 
 .repair-logo::after {
     content: '';
@@ -459,10 +470,29 @@ body {
     width: 32px;
     height: 1.54px;
     background-color: #E3B873;
+    top: 50%;
+    right: 576px;
+}
+
+/* .repair-logo img::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    /* top: 50%; */
+}
+/* 
+.repair-logo__img::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;  */
     /* /* top: 50%; */
 } 
 
-/* почему не сработали псевдоэлементы? */
+/* почему не работают псевдоэлементы? */
 
 
 .repair-types img {
@@ -505,7 +535,7 @@ body {
 
 .redecorating-list {
     position: relative;
-    margin-top: 294px;
+    margin-top: -170px;
     width: 330px;
     height: 286px;
     left: 31px;
@@ -517,7 +547,7 @@ body {
 
 .overhaul-list {
     position: relative;
-    margin-top: 294px;
+    margin-top: -170px;
     width: 330px;
     height: 286px;
     left: 31px;
@@ -528,7 +558,7 @@ body {
 
 .designer-list {
     position: relative;
-    margin-top: 294px;
+    margin-top: -170px;
     width: 330px;
     height: 286px;
     left: 31px;
@@ -580,7 +610,12 @@ body {
     width: 527px;
     height: 555px;
     background-image: url(../images/requestBackground.png);
-    background-size: cover;  
+    background-size: cover; 
+    position: relative; 
+    padding-left: 222px;
+    padding-bottom: 145px;
+    left: -75px;
+    top: -132px;
 
 }
 
@@ -591,7 +626,10 @@ body {
     margin-top: 104px;
 }
 
-
+.request-list__list {
+    position: relative;
+    padding-top: 115px;
+}
 
 .request-list__list li {
     position: relative;
@@ -683,13 +721,19 @@ body {
 .request-form {
     width: 506px;
     height: 509px;
-    /* background: #131313;
-    z-index: -1; */
+    background-color: black;
+    /* margin-top: 106px;
+    padding-top: 28px;
+    padding-bottom: 27px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
    
 }
 
-.request-subtitle {
+.request-form__subtitle {
     font-size: 18px;
     line-height: 26px;
     text-align: center;
@@ -697,22 +741,32 @@ body {
     margin-top: 28px; 
 }
 
-.request-form__label {
-    font-size: 13px;
-    line-height: 21px;
+.request-form .label {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.request-form__input {
+.request-form .input {
+    width: 408px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
     font-size: 14px;
     line-height: 23px;
-    color: #FFFFFF;
-    width: 408px;
-    margin-top: 48px;
+    color: #ffffff;
+}
+.request-form .checkbox{
+    left: -195px;
+    margin-top: -7px;
+}
 
+.request-form .checkbox::after {
+    color: #ffffff;
 }
 .request-form__button {
     margin-left: 244px;
+    margin-bottom: 27px;
 }
 
 .request-logo {
@@ -737,13 +791,15 @@ body {
     right: 470px;
 }
 
-/* Как насторить content изображение в псевдоклассе? */
+/* Как изменить положение изображения в псевдоклассе? */
 
 .realize {
     background-image: url(../images/realizeBackground.png);
     background-size: cover;
     position: relative;
     margin-top: 254px;
+    display: flex;
+    flex-direction: row;
 }
 
 .realize-overlay {
@@ -765,52 +821,386 @@ body {
 }
 
 .realize-list {
-    width: 750px;
+    margin: 137.37px 77px 97.53px 99px;
+    width: 411px;
 }
 
 .realize-list__title {
+    display: inline-block;
+    width: 411px;
+    margin-bottom: 47px;
     font-size: 27px;
     line-height: 37px;
     text-transform: uppercase;
     color: #E3B873;
-    margin-top: 137px;
-    margin-left: 51px;
-
 }
 
 .realize-list__list {
-    margin-top: 42px;
+    padding-left: 0px;
 }
-
 .realize-list__list li {
     font-size: 20px;
     line-height: 38px;
     color: white;
     padding-bottom: 11px;
-    padding-left: 10px;
 }
 
 .realize-list__list li:hover {
     color:  #E3B873;
-    text-decoration: underline 2px solid currentColor;
-    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: solid 0.66px #E3B873;
+    text-underline-offset: 1.17px;
+}
+
+.realize-images-block1
+.realize-images-block2 {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
 
 .realize-images-block1 {
     margin-top: -41px;
+    padding-right: 43px;
+   
 }
 
-.realize-images-block1__image2 {
-    margin-top: 39px;
+.realize-images-block1 img {
+    padding-bottom: 39px;
 }
 
 .realize-images-block2 {
     margin-top: -112px;
+    padding-right: 102px;
 }
 
-.realize-images-block2__image4 {
-    margin-top: 37px;
-    padding-bottom: 40px;
+.realize-images-block2 img {
+    padding-bottom: 37px;
 }
+
 /* Как настроить margin bottom у блоков с изображениями? */
+
+ .clients {
+    padding-right: 101px;
+    text-align: center;
+    margin-bottom: -66px;
+} 
+
+
+.clients-container {
+    padding-left: 101px;
+    
+} 
+
+.clients-title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-top: 110px;
+
+}
+
+.clients-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 27px;
+}
+
+.clients-logo hr {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 5px;
+    margin: auto 7px;
+    height: 0px;
+}
+
+.clients-subtitle {
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+
+.clients-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 39px;
+    text-align: start;
+    padding-bottom: 398.32px;
+    background-image: url(../images/clientsBackground1.png);
+    display: cover;
+}
+
+.clients-content__first__client,
+.clients-content__second__client,
+.clients-content__third__client {
+    width: 376px;
+    padding-top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.client-title {
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    padding-left: 119px;
+    position: relative;
+    padding: 41px 74px 39px 119px;
+}
+
+.subtitle-client {
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+    display: inline-block;
+    width: 376px; 
+    padding-left: 20px;
+    margin-right: 32px;
+}
+
+.clients-content__first__client::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/clients1.png);
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.clients-content__second__client::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/clients2.png);
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.clients-content__third__client::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Client3.png);  
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 24px; 
+}
+
+.subtitle-client {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.clients-content__first__client__result,
+.clients-content__second__client__result,
+.clients-content__third__client__result {
+    margin-top: 63px;
+    width: 293.75px;
+    height: 54px;
+    background-color: #E3B873;
+    
+}
+
+.clients-content__first__client__result .title,
+.clients-content__second__client__result .title,
+.clients-content__third__client__result .title {
+    font-size: 17px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 0;
+}
+
+.clients-content__first__client__result .meter,
+.clients-content__second__client__result .meter,
+.clients-content__third__client__result .meter {
+    padding-right: 76.05px;
+    position: relative;
+    padding-left: 65.1px;
+    margin-top: 17px;
+    top: 14px;
+}
+
+.meter::before {
+    content: url(../images/metr-logo.svg);
+    position: absolute;
+    top: -5px;
+    left: 20px;
+}
+
+.meter::after {
+    content: "";
+    position: absolute;
+    height: 54.03px;
+    border: 0.75px solid #FFFFFF;
+    top: -17px;
+    left: 142px;
+}
+
+.clients-content__first__client__result .days,
+.clients-content__second__client__result .days,
+.clients-content__third__client__result .days {
+    position: relative;
+    top: 14px;
+}
+
+.days::before {
+    content: url(../images/days-logo.svg);
+    position: absolute;
+    top: -5px;
+    left: -39px;
+}
+
+
+/* .question-form {
+    width: 883px;
+    height: 445.32px;
+    transform: translateY(-222.66px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131313;
+    z-index: 1;
+}
+
+.question-form h3 {
+    margin-top: 34.4px;
+    margin-bottom: 45.8px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.question-form__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 232px;
+}
+
+.question-form__content .input {
+    width: 231px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffffff;
+    
+}
+
+.question-form__content .label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.question-form__content__checkbox {
+    align-self: flex-start;
+   
+}
+
+.question-form__content__button {
+    font-size: 13px;
+    line-height: 27px;
+    width: 200px;
+    height: 51px;
+} */
+
+
+
+
+.location {
+    background-image: url(../images/location-back.png);
+    background-size: cover;
+    position: relative;
+}
+
+.location-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.location-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.location-subtitle {
+    margin-top: 274.67px;
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.location-map {
+    margin-top: 43.29px;
+    margin-bottom: 65.93px;
+}
+
+
+.footer {
+background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.footer-navigation {
+    list-style: none;
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.footer-navigation__item {
+    margin-right: 47px;
+   
+}
+
+.footer-navigation__item a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer-navigation__item a:hover {
+    color: #E3B873;
+    
+}
 
