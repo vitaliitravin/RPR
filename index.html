@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile_styles.css">
     <title>IC "Repair Design Project"</title>
 </head>
 <body>
@@ -58,6 +59,9 @@
                 <p class="subtitle projects-aside__paragraph">Only a small part of the work performed by our company is presented <br>
                     on the site. For 14 years on in the construction <br>
                     market we have made happy more than 1000 families</p>
+                
+                    <div class="projects-aside__mobile__image"></div>
+                
                 <table class="projects-aside__city">
                     <tr>
                         <th class="title projects-aside__city__subtitle__table">City:</th>
@@ -92,7 +96,7 @@
     </section>
 
     <section class="control">
-        <div class="container">
+        <div class="container control-container">
             <h3 class="control-title">online control</h3>
         <div class ="control-logo">
             <hr width="32px" size="2" color="#E3B873">
@@ -146,13 +150,13 @@
                         <li>• Replacing doors</li>
                     </ul>
         
-                <div class="repair-types__price">
+                <div class="repair-types__price repair-types__price__redecoration__price">
                     from 900 rub / m2
                 </div>
             </div>
             </div>
             <div class="repair-types">
-                <img src="images/types2.jpg">
+                <img class="overhaul" src="images/types2.jpg">
                 <div class="repair-types overhaul-list">
                     <h4 class="title-list" >Overhaul</h4>
                     <ul class="subtitle-list">
@@ -165,12 +169,12 @@
                         <li>• Replacing doors</li>
                     </ul>   
                 </div>
-                <div class="repair-types__price" id="price-fix">
+                <div class="repair-types__price repair-types__price__overhaul__price" id="price-fix">
                     from 1800 rub / m2
                 </div>
             </div>
             <div class="repair-types">
-                <img src="images/types3.jpg">
+                <img class="designer" src="images/types3.jpg">
                 <div class="repair-types designer-list">
                     <h4 class="title-list">Designer Repair</h4>
                     <ul class="subtitle-list">
@@ -182,7 +186,7 @@
                         <li>• Replacing sockets and switches</li>
                         <li>• Replacing doors</li>
                     </ul> 
-                    <div class="repair-types__price">
+                    <div class="repair-types__price repair-types__price__designer__price">
                         from 4000 rub / m2
                     </div>
                 </div>
@@ -225,8 +229,11 @@
     </section>
     
     <section class="realize">
+         <h2 class="title realize-mobile__title">We realize your <br>
+            wildest fantasies</h2></h2> 
+        <div class="realize-mobile__image"></div>
+
         <div class="container realize-container">
-    
         <div class="realize-list">
         <h2 class="title realize-list__title">We realize your <br>
             wildest fantasies</h2>
@@ -348,8 +355,9 @@
     
     </section>
 
-
-    <!-- <form class="form question-form">
+    <section class="location">
+        
+     <form class="form question-form">
         
         <h3 class="title">have any questions?</h3>
         
@@ -363,9 +371,9 @@
      </div>
      <input class="checkbox question-form__content__checkbox" type="checkbox">
      <button class="button question-form__content__button">submit</button>
-    </form> -->
+    </form> 
 
-    <section class="location">
+    
         <div class="container location-container">
             <p class="title location-subtitle">
                 Rostov-on-Don, Nansen St., 239 Shopping Center <br>
@@ -378,7 +386,7 @@
         </div>
 
         <div class="location-map">
-            <img src="images/location-map.png" width="925" height="465">
+            <img src="images/location-map.png" >
         </div>
        </div>
     <div class="location-overlay"></div>

@@ -399,6 +399,13 @@ body {
     z-index: 1;
 }
 
+@media screen and (max-width: 765px){
+    .control{
+        margin-top: 0;
+    }
+}
+
+
 .control-paragraph {
     font-size: 18px;
     line-height: 37px;
@@ -425,10 +432,22 @@ body {
     margin-bottom: 39px;
 }
 
+@media screen and (max-width: 765px){
+    .control-form .label{
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+
 .control-form .input {
     width: 231px;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
+
+
+
 
 .control-form__checkbox {
     left: 518px;
@@ -473,27 +492,6 @@ body {
     top: 50%;
     right: 576px;
 }
-
-/* .repair-logo img::before {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 1.54px;
-    background-color: #E3B873;
-    /* top: 50%; */
-}
-/* 
-.repair-logo__img::after {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 1.54px;
-    background-color: #E3B873;  */
-    /* /* top: 50%; */
-} 
-
-/* почему не работают псевдоэлементы? */
-
 
 .repair-types img {
     width: 392px;
@@ -618,8 +616,6 @@ body {
     top: -132px;
 
 }
-
-/* как сдвинуть backgroung image? */
 
 .metering,
 .consulation, .estimate {
@@ -791,7 +787,7 @@ body {
     right: 470px;
 }
 
-/* Как изменить положение изображениz в псевдоклассе? */
+/* Как установить вектор по середине круга? */
 
 .realize {
     background-image: url(../images/realizeBackground.png);
@@ -823,6 +819,8 @@ body {
 .realize-list {
     margin: 137.37px 77px 97.53px 99px;
     width: 411px;
+    position: relative;
+    right: 433px;
 }
 
 .realize-list__title {
@@ -852,33 +850,38 @@ body {
     text-underline-offset: 1.17px;
 }
 
-.realize-images-block1
+.realize-images-block1,
 .realize-images-block2 {
     display: flex;
     flex-direction: column;
     z-index: 1;
+    position: absolute;
 }
 
 .realize-images-block1 {
-    margin-top: -41px;
-    padding-right: 43px;
-   
-}
+    /* margin-top: -41px; */
+    /* padding-right: 43px; */
+    margin-left: 77px; 
+ }
 
-.realize-images-block1 img {
-    padding-bottom: 39px;
+.realize-images-block1  img {
+    top: 0px;
 }
+/* .realize-images-block1 img {
+    padding-bottom: 39px;
+} */
 
 .realize-images-block2 {
-    margin-top: -112px;
-    padding-right: 102px;
+    /* margin-top: -112px; */
+    /* padding-right: 102px; */
+    margin-left: 477px;
 }
 
 .realize-images-block2 img {
     padding-bottom: 37px;
 }
 
-/* Как настроить margin bottom у блоков с изображениями? */
+/* Как насторить границы изображения? С помощью свойств top left right bottom без отрицательных значений не получилось */
 
  .clients {
     padding-right: 101px;
@@ -935,6 +938,9 @@ body {
     background-image: url(../images/clientsBackground1.png);
     display: cover;
 }
+
+/* Как установить background image на всю ширину стариницы? */
+
 
 .clients-content__first__client,
 .clients-content__second__client,
@@ -1062,7 +1068,7 @@ body {
 }
 
 
-/* .question-form {
+.question-form {
     width: 883px;
     height: 445.32px;
     transform: translateY(-222.66px);
@@ -1071,6 +1077,8 @@ body {
     align-items: center;
     background-color: #131313;
     z-index: 1;
+    position: absolute;
+    margin-left: 385.7px;
 }
 
 .question-form h3 {
@@ -1087,6 +1095,11 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 232px;
+    position: relative;
+    right: 121px;
+    height: 125px;
+    width: 473.82px;
+    align-items: center;
 }
 
 .question-form__content .input {
@@ -1108,19 +1121,31 @@ body {
 }
 
 .question-form__content__checkbox {
-    align-self: flex-start;
-   
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-left: 298.69px;
+   margin-top: 291.49px;
+}
+
+.question-form__content__checkbox::after {
+    color: #FFFFFF;
 }
 
 .question-form__content__button {
+    position: absolute;
     font-size: 13px;
     line-height: 27px;
     width: 200px;
     height: 51px;
-} */
+    left: 0;
+    top: 0;
+    margin-top: 359.92px;
+    margin-left: 341.5px;
+  
+}
 
-
-
+/* Форма позиционируется статично относительно потока. Как можно было сделать по другому?*/
 
 .location {
     background-image: url(../images/location-back.png);
@@ -1161,6 +1186,8 @@ body {
 }
 
 .location-map {
+    width: 925px;
+    height: 465px;
     margin-top: 43.29px;
     margin-bottom: 65.93px;
 }
